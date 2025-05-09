@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biodata Akiraa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('keqing wall.jpg'); /* Ganti dengan nama gambar latar belakang */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #2e0d61;
+      min-height: 100vh;
+    }
+
+    .navbar,
+    footer {
+      background-color: #7e5bef !important;
+    }
+
+    .navbar-brand img {
+      border-radius: 50%;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card .card-title {
+      font-size: 1rem;
+      color: #4b0082;
+    }
+
+    .card .card-text {
+      font-size: 0.9rem;
+    }
+
+    .modal-content {
+      background-color: #fdfbff;
+      color: #2e0d61;
+    }
+
+    .modal-body h5 {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    .modal-body p {
+      font-size: 1.3rem;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
+
+    a.btn-primary {
+      background-color: #7e5bef;
+      border-color: #7e5bef;
+    }
+
+    a.btn-primary:hover {
+      background-color: #6844d8;
+      border-color: #6844d8;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="profil.jpg" alt="logo" width="35" height="35" class="d-inline-block me-2" />
+        <strong>AkiraaKitta</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="biodata.html">Biodata</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section: Jurusan Unggulan -->
+  <section class="container my-5">
+    <h1 class="text-center mb-4 text-primary">Jurusan Unggulan</h1>
+
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-4">
+        <div class="card" role="button" data-bs-toggle="modal" data-bs-target="#cardModal1">
+          <div class="card-body text-center">
+            <h5 class="card-title">TKJ</h5>
+            <p class="card-text">Kelas: X/XI</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal TKJ -->
+    <div class="modal fade" id="cardModal1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body position-relative text-center">
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            <img src="TKJ.png" alt="TKJ" class="img-fluid mb-3 rounded" />
+            <h5>TKJ</h5>
+            <p>Kelas: X/XI</p>
+            <p class="card-text text-justify">Teknik Komputer dan Jaringan (TKJ) mempelajari perakitan komputer, instalasi sistem operasi, pengelolaan jaringan, troubleshooting dan keamanan sistem jaringan komputer.</p>
+            <a href="detail-tkj.html" class="btn btn-primary">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card DKV -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-4">
+        <div class="card" role="button" data-bs-toggle="modal" data-bs-target="#cardModal2">
+          <div class="card-body text-center">
+            <h5 class="card-title">DKV</h5>
+            <p class="card-text">Kelas: X/XI</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal DKV -->
+    <div class="modal fade" id="cardModal2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body position-relative text-center">
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            <img src="DKV.png" alt="DKV" class="img-fluid mb-3 rounded" />
+            <h5>DKV</h5>
+            <p>Kelas: X/XI</p>
+            <p class="card-text text-justify">Desain Komunikasi Visual (DKV) adalah jurusan yang mempelajari penyampaian pesan dan informasi secara visual melalui media grafis, ilustrasi, dan multimedia.</p>
+            <a href="detail-dkv.html" class="btn btn-primary">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Pemasaran -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-4">
+        <div class="card" role="button" data-bs-toggle="modal" data-bs-target="#cardModal3">
+          <div class="card-body text-center">
+            <h5 class="card-title">PEMASARAN</h5>
+            <p class="card-text">Kelas: X/XI</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Pemasaran -->
+    <div class="modal fade" id="cardModal3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body position-relative text-center">
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            <img src="PM.png" alt="Pemasaran" class="img-fluid mb-3 rounded" />
+            <h5>PEMASARAN</h5>
+            <p>Kelas: X/XI</p>
+            <p class="card-text text-justify">Pemasaran adalah jurusan yang mengajarkan strategi menjual produk, merancang kampanye promosi, memahami perilaku konsumen, serta memanfaatkan media sosial untuk pemasaran digital.</p>
+            <a href="detail-pemasaran.html" class="btn btn-primary">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><footer class="text-white text-center py-3 w-100" style="background-color: #7e5bef; position: fixed; bottom: 0; left: 0;">
+   2025 Akiraxx - Thame
+</footer>
+
+</body>
+</html>
